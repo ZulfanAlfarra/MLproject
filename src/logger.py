@@ -2,8 +2,6 @@ import logging
 import os
 from datetime import datetime
 
-from exception import CustomException
-import sys
 
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 logs_path = os.path.join(os.getcwd(), "logs")
@@ -17,11 +15,5 @@ logging.basicConfig(
     level=logging.INFO
     )
 
-if __name__ == "__main__":
-    logging.info("Logging has started")
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info("Divide by Zero")
-        raise CustomException(e, sys)
+
 
