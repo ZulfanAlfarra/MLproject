@@ -19,7 +19,7 @@ The goals of this project to predict **student's math score** based on several c
 
 ---
 
-## 🛠️ **Teknologi yang Digunakan**
+## 🛠️ **Technology Used**
 - **Programming Language**: Python
 - **ML Framework**: scikit-learn
 - **Deployment**: Flask
